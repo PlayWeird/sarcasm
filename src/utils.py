@@ -1,12 +1,6 @@
 import csv
 import json
-
-
-### SARC Directory Paths ###
-SARC_DATA = 'Dropbox/SARC/DATA/'
-SARC_MAIN = SARC_DATA + 'main/'
-SARC_POL = SARC_DATA + 'pol/'
-
+from config import *
 
 def load_sarc_responses(train_file, test_file, comment_file, lower=True):
   '''loads SARC data from csv files
