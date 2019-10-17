@@ -1,3 +1,4 @@
 *.xml
 *.csv
 DATA/
+*.ipynb_checkpoints
