@@ -1,4 +1,5 @@
 *.xml
 *.csv
 DATA/
-*.ipynb_checkpoints
+*.ipynb_checkpoints]
+*.idea
