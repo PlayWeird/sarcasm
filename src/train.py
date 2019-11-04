@@ -1,14 +1,12 @@
 import sys
 sys.path.insert(1, 'src/')
-from src import utilities
+import utilities
 import config
-import csv
 
 SARC_DATA = config.SARC_DATA
 SARC_MAIN = config.SARC_MAIN
 SARC_POL = config.SARC_POL
 
-from fastai import *
 from fastai.text import *
 
 
@@ -46,6 +44,8 @@ if __name__ == "__main__":
     data_lm = load_data('.', 'lm_databunch', bs=bs)
 
     learn_lm = language_model_learner(data_lm, AWD_LSTM, drop_mult=0.3)
+
+    bs = 64
 
     lr = 2e-2
     lr *= bs / 48
