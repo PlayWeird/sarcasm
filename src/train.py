@@ -30,6 +30,8 @@ def create_csv_labels(f_name='bunch_data.csv'):
 
 
 if __name__ == "__main__":
+    bs = 64
+
     train_path = SARC_MAIN + 'train-balanced.csv'
     test_path = SARC_MAIN + 'test-balanced.csv'
     comment_path = SARC_MAIN + 'comments.json'
@@ -45,8 +47,6 @@ if __name__ == "__main__":
     data_lm = load_data('.', 'lm_databunch', bs=bs)
 
     learn_lm = language_model_learner(data_lm, AWD_LSTM, drop_mult=0.3)
-
-    bs = 64
 
     lr = 2e-2
     lr *= bs / 48
