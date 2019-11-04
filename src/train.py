@@ -1,7 +1,8 @@
 import sys
+
 sys.path.insert(1, 'src/')
 import utilities
-import config
+from src import config
 
 SARC_DATA = config.SARC_DATA
 SARC_MAIN = config.SARC_MAIN

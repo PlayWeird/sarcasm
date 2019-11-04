@@ -1,6 +1,6 @@
 import csv
 import json
-from config import *
+
 
 def load_sarc_responses(train_file, test_file, comment_file, lower=False):
   '''loads SARC data from csv files
