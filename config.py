@@ -1,4 +1,6 @@
-# SARC directory paths
-SARC_DATA = 'DATA/'
+import os
+
+# SARC directry paths
+SARC_DATA = os.path.expanduser('~/DATA/SARC/')
 SARC_MAIN = SARC_DATA + 'main/'
 SARC_POL = SARC_DATA + 'pol/'
